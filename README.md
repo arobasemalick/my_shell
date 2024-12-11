@@ -1,1 +1,1 @@
-# Shell_In_C
+This is a shell in C 
