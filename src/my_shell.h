@@ -5,5 +5,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
+//FUNCTIONS
+char* reading(void);
 
 #endif
