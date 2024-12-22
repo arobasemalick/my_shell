@@ -17,7 +17,7 @@ int exec(char **args){
     &my_shell_exit
     };    
 
-   for (int i=0; i < sizeof(builtin_func_list) / sizeof(char *); i++)   //look if the command is a builtin
+   for (size_t i=0; i < sizeof(builtin_func_list) / sizeof(char *); i++)   //look if the command is a builtin
     {
         if (strcmp(args[0], builtin_func_list[i]) == 0)    // execute if there is a match
     {

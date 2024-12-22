@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-int main(int argc, char* argv[]){ //the fonction that calls the shell
+int main(void){ //the fonction that calls the shell
 
     my_shell();
 

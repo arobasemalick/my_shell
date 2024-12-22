@@ -3,12 +3,12 @@
 char* reading(void){
     
     char *buf=NULL;
-    size_t n=NULL;
+    size_t n=0;
 
     if (getline(&buf,&n,stdin)==-1){
         free(buf);
         perror("Error on reading\n");
-        return -1;
+        exit(EXIT_FAILURE);
     }
     
     return buf;

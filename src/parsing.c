@@ -9,13 +9,13 @@ char **parsing(char* line){
 
     if (!tokens){
         perror("Error on tokens allocation while parsing\n");
-        return -1;
+        exit(EXIT_FAILURE);
     }
 
     token = strtok(line,DELIM); //for first token
 
     while (token){   //token!=NULL
-        if (token[0]=="#") //for the comments
+        if (token[0]=='#') //for the comments
             break;
         tokens[i]=token;
         i++;
@@ -26,7 +26,7 @@ char **parsing(char* line){
     if (!tokens)
         {
             perror("Error on tokens allocation while parsing\n");
-            return -1;
+            exit(EXIT_FAILURE);
         }  
     }
     token=strtok(NULL,DELIM);    //for the other tokens
