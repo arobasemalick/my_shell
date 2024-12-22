@@ -12,5 +12,6 @@
 
 //FUNCTIONS
 char* reading(void);
+char **parsing(char* line);
 
 #endif
