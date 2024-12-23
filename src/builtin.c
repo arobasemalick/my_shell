@@ -2,7 +2,7 @@
 
 int my_shell_cd(char **args) {
     if (!args[1]) {
-        fprintf(stderr, "Expected argument for \"cd\"\n");
+        fprintf(stderr, "my_shell : expected argument for \"cd\"\n");
         return -1;
     }
     if (chdir(args[1]) != 0) {

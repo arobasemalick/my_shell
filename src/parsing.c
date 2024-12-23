@@ -14,7 +14,7 @@ char **parsing(char* line){
     }
 
     if (!tokens){
-        perror("Error on tokens allocation while parsing\n");
+        perror("my_shell : error on tokens allocation while parsing\n");
         exit(EXIT_FAILURE);
     }
 
@@ -31,7 +31,7 @@ char **parsing(char* line){
         tokens = realloc(tokens, buffer * sizeof(char *)); //add size to the buffer
     if (!tokens)
         {
-            perror("Error on tokens allocation while parsing\n");
+            perror("my_shell : error on tokens allocation while parsing\n");
             exit(EXIT_FAILURE);
         }  
     }
