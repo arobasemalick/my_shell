@@ -14,7 +14,7 @@ Execution :
 ./my_shell
 ```
 
-# Examples
+## Examples
 
 ```bash
 my_shell> ls
