@@ -7,6 +7,12 @@ char **parsing(char* line){
     char **tokens=malloc(buffer*sizeof(char*));
     char *token;
 
+    // Remove the trailing '\n', if any
+    size_t len = strlen(line);
+    if (len > 0 && line[len - 1] == '\n') {
+        line[len - 1] = '\0';
+    }
+
     if (!tokens){
         perror("Error on tokens allocation while parsing\n");
         exit(EXIT_FAILURE);
